@@ -27,12 +27,59 @@
       </div>
     </div>
   </header>
-  <h1>Danh sách bài viết</h1>
-  <ul>
-    <li><a href="#">Bài viết 1</a></li>
-    <li><a href="#">Bài viết 2</a></li>
-    <li><a href="#">Bài viết 3</a></li>
-  </ul>
+  <section style="margin-top: -70px" class="blog-featured-posts">
+    <div style="margin-top: 100px; text-align: center;" class="blog-container">
+      <h2>Tất cả bài viết</h2>
+      <div class="blog-grid">
+        <div class="blog-post">
+          <a href="/blog1">
+            <img src="https://i2.wp.com/riolamwritings.com/wp-content/uploads/2018/11/45626316_562416297520072_5302531130031865856_n.jpg?w=960&ssl=1" alt="">
+            <p>“Nhớ khi nào lúc ra đi…”</p>
+          </a>
+        </div>
+        <div class="blog-post">
+          <img src="https://i0.wp.com/riolamwritings.com/wp-content/uploads/2018/08/u23.jpg?w=1200&ssl=1" alt="">
+          <p>Để tôi nói cho các ông nghe về lòng yêu nước</p>
+        </div>
+        <div class="blog-post">
+          <img src="https://i2.wp.com/riolamwritings.com/wp-content/uploads/2017/02/nadef7yjb_q-luis-del-rio-camacho.jpg?w=2000" alt="">
+          <p>Con Đường Bỏ Lại | The Road Not Taken – Robert Frost</p>
+        </div>
+        <div class="blog-post">
+          <img src="https://i0.wp.com/riolamwritings.com/wp-content/uploads/2012/04/pexels-photo-large-1.jpeg?w=890&ssl=1" alt="">
+          <p>Với tay không chạm thấy gì</p>
+        </div>
+        <div class="blog-post">
+          <img src="https://i2.wp.com/riolamwritings.com/wp-content/uploads/2017/02/nadef7yjb_q-luis-del-rio-camacho.jpg?w=2000" alt="">
+          <p>Con Đường Bỏ Lại | The Road Not Taken – Robert Frost</p>
+        </div>
+        <div class="blog-post">
+          <img src="https://i0.wp.com/riolamwritings.com/wp-content/uploads/2012/04/pexels-photo-large-1.jpeg?w=890&ssl=1" alt="">
+          <p>Với tay không chạm thấy gì</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Chatbot UI -->
+  <button class="chat-button" onclick="toggleChat()">💬</button>
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">Hỗ trợ</div>
+    <div class="chat-body" id="chatBody">
+      <div class="message bot-message">Chào bạn! Tôi là trợ lý tư vấn du học Song Nguyên.</div>
+      <div class="message bot-message">
+        Tôi có thể hỗ trợ bạn trực tiếp hoặc bạn có thể chọn các nội dung:
+        <br>1️⃣ Nước du học
+        <br>2️⃣ Ngành học
+        <br>3️⃣ Nguồn học bổng
+      </div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="userInput" placeholder="Nhập tin nhắn..." onkeydown="handleInput(event)" />
+    </div>
+  </div>
+
+  <script src="/chatbot.js"></script>
+  
   <footer class="main-footer">
     <div class="container">
       <div class="footer-left">

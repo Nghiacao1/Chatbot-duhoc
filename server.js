@@ -22,6 +22,11 @@ app.get('/blog', (req, res) => {
 app.get('/gioithieu', (req, res) => {
     res.render('gioithieu'); // 👈 Quan trọng
   });
+
+// Route trang giới thiệu
+app.get('/blog1', (req, res) => {
+  res.render('blogs/blog1'); // không cần ghi đuôi .ejs
+});
 // Khởi động server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

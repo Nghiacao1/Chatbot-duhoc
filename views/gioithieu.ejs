@@ -67,8 +67,25 @@
       <p>Chúc bạn thành công và sớm chinh phục giấc mơ du học của mình!</p>
     </section>
   </main>
-  
-  
+  <!-- Chatbot UI -->
+  <button class="chat-button" onclick="toggleChat()">💬</button>
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">Hỗ trợ</div>
+    <div class="chat-body" id="chatBody">
+      <div class="message bot-message">Chào bạn! Tôi là trợ lý tư vấn du học Song Nguyên.</div>
+      <div class="message bot-message">
+        Tôi có thể hỗ trợ bạn trực tiếp hoặc bạn có thể chọn các nội dung:
+        <br>1️⃣ Nước du học
+        <br>2️⃣ Ngành học
+        <br>3️⃣ Nguồn học bổng
+      </div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="userInput" placeholder="Nhập tin nhắn..." onkeydown="handleInput(event)" />
+    </div>
+  </div>
+
+  <script src="/chatbot.js"></script>
   <footer class="main-footer">
     <div class="container">
       <div class="footer-left">
