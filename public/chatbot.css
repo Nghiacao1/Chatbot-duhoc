@@ -1,0 +1,351 @@
+.main-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .main-header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Logo bên trái */
+  .logo a {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Gom menu + tìm kiếm về bên phải */
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  /* Menu ngang */
+  .nav-menu {
+    margin-left: 400px;
+    display: flex;
+    gap: 18px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    color: #007BFF;
+  }
+  
+  /* Search box style */
+  .search-box {
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    background: white;
+    width: 240px;
+    padding: 5px; 
+    border-radius: 25px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-box input[type="text"] {
+    padding: 6px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 20px 20px 20px 20px;
+    outline: none;
+    font-size: 14px;
+    width: 160px;
+  }
+  
+  .search-box button {
+    padding: 6px 6px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-box button:hover {
+    background-color: #0056b3;
+  }
+  
+.swiper-container {
+    width: 100%;
+    max-width: 1500px; /* Đảm bảo slider nằm trong khung nhất định */
+    margin: auto;
+    padding: 20px 0;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course-card {
+    background: #000;
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.course-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.grid-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+width: 100%;
+max-width: 1000px;
+margin: auto;
+}
+
+.grid-item img {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 8px;
+object-fit: cover;
+}
+.grid-item a:-webkit-any-link {
+color: -webkit-link;
+cursor: pointer;
+text-decoration: none;
+}
+
+
+/* Định dạng cho ngày tháng */
+.post-date {
+font-size: 0.9em;
+color: #666;
+}
+
+/* Định dạng cho đoạn văn */
+p {
+margin: 1em 0;
+}
+
+/* Định dạng cho hình ảnh */
+.post-image {
+width: 100%;
+height: auto;
+margin: 20px 0;
+}
+
+/* Định dạng cho chữ ký */
+.signature {
+font-style: italic;
+text-align: right;
+margin-top: 20px;
+}
+.chat-button {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1001;
+  }
+
+  .chat-box {
+    position: fixed;
+    bottom: 40px;
+    right: 90px;
+    width: 300px;
+    max-height: 400px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .chat-header {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+  }
+
+  .chat-body {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .chat-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+
+  .chat-footer input {
+    width: 94%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .message {
+    max-width: 80%;
+    padding: 6px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    word-wrap: break-word;
+  }
+
+  .user-message {
+    background-color: #e1f5fe;
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .bot-message {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+    text-align: left;
+  }
+  .main-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    padding: 40px 0 20px;
+    color: #444;
+    font-size: 14px;
+  }
+  
+  .main-footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .main-footer h4 {
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .main-footer p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .main-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main-footer ul li {
+    margin-bottom: 6px;
+  }
+  
+  .main-footer a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .main-footer a:hover {
+    color: #007BFF;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    color: #888;
+    font-size: 13px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .main-footer .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+      width: 100%;
+    }
+  }
+  .about-page {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #333;
+  }
+  
+  .about-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007BFF;
+  }
+  
+  .about-section h2 {
+    font-size: 22px;
+    margin-top: 30px;
+    color: #444;
+  }
+  
+  .about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-section ul {
+    margin-left: 20px;
+    list-style: none;
+  }
+  
+  .about-section ul li::before {
+    content: "• ";
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .about-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  
