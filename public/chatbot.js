@@ -80,7 +80,7 @@ function toggleChat() {
         headers: {
          "Content-Type": "application/json",
          "Authorization": "Bearer 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",
-         "HTTP-Referer": "https://nghiacao1.github.io/duhoc-chatbot",
+         "HTTP-Referer": "https://blog-chatbot-6of6.onrender.com/",
          "X-Title": "Test Chatbot"
        },
         body: JSON.stringify({
